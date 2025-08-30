@@ -1,0 +1,28 @@
+{
+  "name": "mcp-usdcode",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/server.js",
+  "types": "dist/server.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --enable-source-maps dist/server.js",
+    "dev": "ts-node-esm src/server.ts",
+    "check": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "ishandotsh",
+  "license": "ISC",
+  "description": "A tiny MCP server to access NVIDIA's usdcode model through Claude Code / Codex",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.4",
+    "dotenv": "^16.4.5",
+    "openai": "^5.16.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
